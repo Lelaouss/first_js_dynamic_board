@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tableau dynamique</title>
+        <!-- Main CSS et JS -->
+        <link rel="stylesheet" href="css/tableau_dyn.css" />        
+    </head>
+
+    <body>
+        <div>
+            <table id="tableau">
+                <caption>Liste de personnes</caption>
+                <thead id="titresTableau">
+                    <tr>
+                        <th class="cel_checkBox"><input type="checkbox" name="allSelect" id="allSelect" onclick="selectAll()" /></th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Mail</th>
+                        <th>Tél.</th>
+                        <th>Ville</th> 
+                    </tr>
+                </thead>
+                <tbody id="tabBody">
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <form id="formulaire" name="formulaire">
+                <fieldset>
+                    <legend>Remplissage du tableau</legend>
+                    <p>
+                        <label for="nom">Nom : </label><input type="text" name="nom" id="nom" size="5" onkeyup="buttonDisplay()" />
+                    </p>
+                    <p>
+                        <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom" size="5" onkeyup="buttonDisplay()" />
+                    </p>
+                    <p>
+                        <label for="mail">Mail : </label><input type="email" name="mail" id="mail" size="10" onkeyup="buttonDisplay()" />
+                    </p>
+                    <p>
+                        <label for="tel">Tél. : </label><input type="tel" name="tel" id="tel" size="7" onkeyup="buttonDisplay()" />
+                    </p>
+                    <p>
+                        <label for="ville">Ville : </label><input type="text" name="ville" id="ville" size="5" onkeyup="buttonDisplay()" />
+                    </p>
+                    <input type="button" value="Ajouter" id="ajouter" onclick="addLine()" class="hide" />
+                    <input type="button" value="Modifier" id="modifier" onclick="modify()" class="hide" />
+                    <input type="button" value="Supprimer" id="supprimer" onclick="delLine()" class="hide" />
+                    <input type="button" value="RAZ" id="reset" onclick="raz()" class="hide" />
+                </fieldset>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/tableau_dyn.js"></script>
+    </body>
+</html>

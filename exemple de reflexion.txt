@@ -1,0 +1,23 @@
+// au départ tous les boutons sont cachés   ->    OK
+// onkeyup sur un champ:
+    // -> affichage bouton ajouter et raz   ->    OK
+// si champs vides et aucune ligne dans le tableau: 
+    // -> on cache bouton ajouter et raz   ->    OK
+// après click sur le bouton raz:
+    // -> on cache les boutons raz et ajouter   ->    OK
+// après click sur une ligne (remplissage des inputs):
+    // -> affichage des boutons raz et ajouter   ->    OK
+
+
+// au cochage d'une seule ligne dans le  tableau:
+    // -> affichage boutons supprimer, raz et modifier   ->    OK
+// si plusieurs lignes sont cochées:
+    // -> affichage boutons supprimer et raz   ->    OK
+    // -> on cache les boutons modifier et ajouter   ->    OK
+// si toutes les lignes sont décochées:
+    // -> on cache les boutons modifier et supprimer   ->    OK
+
+
+// si toutes les lignes sont cochées:
+    // -> on coche la checkbox d'en tête   ->    OK
+    // -> affichage du bouton supprimer   ->    OK

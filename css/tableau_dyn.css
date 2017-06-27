@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+th, td {
+    border: 1px solid black;
+    height: 25px;
+    width: 180px;
+}
+
+.cel_checkBox {
+    width: 50px;
+}
+
+#formulaire {
+    margin-top: 50px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: inline-block;
+}
